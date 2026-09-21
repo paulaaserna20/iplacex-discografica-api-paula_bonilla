@@ -7,7 +7,7 @@ COPY . .
 RUN gradle clean bootWar --no-daemon
 
 
-FROM openjdk:21-jdk-slim
+FROM eclipse-temurin:21-jdk-noble
 
 WORKDIR /app
 
